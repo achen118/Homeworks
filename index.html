@@ -1,31 +1,45 @@
 <html>
-    <head>
+  <head>
     <title>Chocolate Layer Cake with Cherry Buttercream Recipe</title>
-    </head>
-    <body>
-        <a name="#top"></a>
-        <img src="https://static1.squarespace.com/static/559fe7ffe4b090c945b980fa/t/592f1dcf37c581cd999e3c13/1496260150671/?format=750w" alt="Chocolate Layer Cake with Cherry Buttercream Recipe"/>
+  </head>
+  <body>
+    <a name="#top"></a>
+    <header>
+      <img src="https://cdn.evbuc.com/eventlogos/33308251/appacademylogo.png" alt="App Academy Logo" width="200"/>
+      <nav>
         <ul>
+          <li><a href="#description">Description</a></li>
           <li><a href="#ingredients">Ingredients</a></li>
           <li><a href="#directions">Directions</a></li>
         </ul>
-        <h1>Chocolate Layer Cake with Cherry Buttercream Recipe</h1>
+      </nav>
+    </header>
+    <aside>
+      <a name="ingredients"></a>
+      <h2>Ingredients</h2>
+      <ul><li><strong>one recipe for rich chocolate cake</strong></li></ul>
+      <p>for the cherry puree</p>
+      <ul><li>10 -12 cherries, pitted and sliced</li>
+        <li>2 tbl. sugar</li>
+        <li>1 tbl. water</li>
+      </ul>
+      <p>for the cherry buttercream (buttercream adapted from <strong><a href="https://www.stylesweetca.com/blog/2016/1/25/chocolate-dipped-strawberry-cake-my-best-tips-for-drippy-cakes" alt="Style Sweet CA Chocolate Dipped Strawberry Cake">Style Sweet CA</a></strong>)</p>
+      <ul><li>3 large egg whites</li>
+        <li>1 cup white sugar</li>
+        <li>1 1/2 cups unsalted butter (3 sticks), softened</li>
+        <li>1 tsp. vanilla</li>
+        <li>6 - 8 tbl. cherry puree</li></ul>
+    </aside>
+    <section>
+      <h1>Chocolate Layer Cake with Cherry Buttercream Recipe</h1>
+      <figure>
+        <img src="https://static1.squarespace.com/static/559fe7ffe4b090c945b980fa/t/592f1dcf37c581cd999e3c13/1496260150671/?format=750w" alt="Chocolate Layer Cake with Cherry Buttercream Recipe"/>
+      </figure>
+      <figcaption>Photo of <a href="https://en.wikipedia.org/wiki/Cake">cake</a></figcaption>
+        <a name="description"></a>
+        <h2>Description</h2>
         <p>Since my one main resolution of the year was to bake more, I decided that I needed to practice more with cakes and cake decorating. And since my little sister's birthday was coming up, I figured it was the perfect excuse to try it out. While this cake took a lot of patience, it was so fun and almost therapeutic! Kyle has started taking an interest in my food and photography passions and helped me film the stopmotion video above. This is my favorite chocolate cake recipe that I have been using for a couple of years now, but I lightened it up by pairing it with a super light and creamy cherry buttercream frosting. This was my first time making a buttercream with a base of egg whites, and I am hooked! If you want more of a cherry flavor, I suggest doubling the cherry mixture and maybe piping it in the middle layer of the cakes.</p>
-        <p>--Madeline Hall</p>
-        <a name="ingredients"></a>
-        <h2>Ingredients</h2>
-        <ul><li><strong>one recipe for rich chocolate cake</strong></li></ul>
-        <p>for the cherry puree</p>
-        <ul><li>10 -12 cherries, pitted and sliced</li>
-          <li>2 tbl. sugar</li>
-          <li>1 tbl. water</li>
-        </ul>
-        <p>for the cherry buttercream (buttercream adapted from <strong><a href="https://www.stylesweetca.com/blog/2016/1/25/chocolate-dipped-strawberry-cake-my-best-tips-for-drippy-cakes" alt="Style Sweet CA Chocolate Dipped Strawberry Cake">Style Sweet CA</a></strong>)</p>
-        <ul><li>3 large egg whites</li>
-          <li>1 cup white sugar</li>
-          <li>1 1/2 cups unsalted butter (3 sticks), softened</li>
-          <li>1 tsp. vanilla</li>
-          <li>6 - 8 tbl. cherry puree</li></ul>
+
         <a name = "Directions"></a>
         <h2>Directions</h2>
         <p><i><ol><li>for the cherry puree</li></i></p>
@@ -46,6 +60,49 @@
 
         <p>To get the look on the top of the cake I just smoothed it out with the cake spatula several times until it became this pattern. This only took me about 5 minutes!</p>
       </ol>
-              <ul><li><a href="#top">Back to Top</a></li></ul>
-    </body>
+    </section>
+    <section>
+      <h2>Write A Review</h2>
+      <form action="/reviews" method="post">
+        <label for="name">Your Name: </label>
+        <input type="text" id="name" />
+        <br /><br />
+        <label>Rating:
+          <input checked type="radio" id="rating1" name="rating" value="1">
+          <label for="rating1">1</label>
+          &nbsp;
+          <input type="radio" id="rating2" name="rating" value="2">
+          <label for="rating2">2</label>
+          &nbsp;
+          <input type="radio" id="rating3" name="rating" value="3">
+          <label for="rating3">3</label>
+          &nbsp;
+          <input type="radio" id="rating4" name="rating" value="4">
+          <label for="rating4">4</label>
+          &nbsp;
+          <input type="radio" id="rating5" name="rating" value="5">
+          <label for="rating5">5</label>
+        </label>
+        <br /><br />
+        <label for="expertise">Cooking Expertise: </label>
+        <select id="expertise">
+          <option disabled selected>Select Cooking Expertise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+        </select>
+        <br /><br />
+        <label for="review">Your Review: </label>
+        <textarea id="review"></textarea>
+        <br /><br />
+        <input type="submit" value="Submit Review">
+      </form>
+    </section>
+    <br /><br />
+    <footer>
+      <p>Recipe by Madeline Hall</p>
+      <a href="#top">Back to Top</a>
+    </footer>
+  </body>
 </html>
