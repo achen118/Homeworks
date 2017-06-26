@@ -2,12 +2,11 @@
     <h1>New User</h1>
 
     <%= render "shared/errors" %>
-
     <form action="<%= users_url %>" method="post">
-      <input
-        type="hidden"
-        name="authenticity_token"
-        value="<%= form_authenticity_token %>">
+    <input
+  type="hidden"
+  name="authenticity_token"
+  value='<%= form_authenticity_token %>'>
 
       <label for="user_username">User Name</label>
       <input type="text"
@@ -25,4 +24,7 @@
 
       <input type="submit">
     </form>
+<% content_for :footer do %>
+  <p>This is the sign up page.</p>
+<% end %>
 </div></section>
