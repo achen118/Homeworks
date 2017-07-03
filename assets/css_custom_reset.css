@@ -1,0 +1,21 @@
+/*html, head, title, body, a, header, img, nav, ul, li, aside, p, h2, p, section, figure, figcaption, i, ol, h1, form, footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+input[type="radio"], select, input[type="submit"] {
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:last-child {
+  background-color: gold;
+}
+
+input[type="submit"]:hover {
+  -webkit-filter: brightness(90%);
+}*/
